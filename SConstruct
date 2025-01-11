@@ -35,8 +35,9 @@ Run the following command to download godot-cpp:
 
 env = SConscript("godot-cpp/SConstruct", {"env": env, "customs": customs})
 
-env.Append(CPPPATH=["src/"])
+env.Append(CPPPATH=["src/", "src/libharu/include/"])
 sources = Glob("src/*.cpp")
+libharu_sources = Glob("src/libharu/src/*.c")
 
 if env["target"] in ["editor", "template_debug"]:
     try:
@@ -55,7 +56,7 @@ if env["platform"] == "macos" or env["platform"] == "ios":
 libraryfile = "bin/{}/{}{}".format(env["platform"], filepath, file)
 library = env.SharedLibrary(
     libraryfile,
-    source=sources,
+    source=[sources, libharu_sources],
 )
 
 copy = env.InstallAs("{}/bin/{}/{}lib{}".format(projectdir, env["platform"], filepath, file), library)

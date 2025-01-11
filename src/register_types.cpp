@@ -4,6 +4,8 @@
 #include <godot_cpp/core/defs.hpp>
 #include <godot_cpp/godot.hpp>
 
+#include "haru.h"
+
 using namespace godot;
 
 void initialize_gdextension_types(ModuleInitializationLevel p_level)
@@ -12,6 +14,8 @@ void initialize_gdextension_types(ModuleInitializationLevel p_level)
     {
 		return;
 	}
+
+	GDREGISTER_CLASS(PDFExporter);
 }
 
 void uninitialize_gdextension_types(ModuleInitializationLevel p_level)
