@@ -6,7 +6,7 @@ on:
   merge_group:
 
 env:
-  LIBNAME: example
+  LIBNAME: haru
 
 jobs:
   build:
@@ -18,122 +18,122 @@ jobs:
           - platform: linux
             float-precision: single
             arch: x86_64
-            target-type: template_debug
+            target-type: haru_debug
             os: ubuntu-20.04
 
           - platform: windows
             float-precision: single
             arch: x86_32
-            target-type: template_debug
+            target-type: haru_debug
             os: windows-latest
 
           - platform: windows
             float-precision: single
             arch: x86_64
-            target-type: template_debug
+            target-type: haru_debug
             os: windows-latest
 
           - platform: macos
             float-precision: single
             arch: universal
-            target-type: template_debug
+            target-type: haru_debug
             os: macos-latest
 
           - platform: android
             float-precision: single
             arch: arm64
-            target-type: template_debug
+            target-type: haru_debug
             os: ubuntu-20.04
 
           - platform: android
             float-precision: single
             arch: arm32
-            target-type: template_debug
+            target-type: haru_debug
             os: ubuntu-20.04
 
           - platform: android
             float-precision: single
             arch: x86_64
-            target-type: template_debug
+            target-type: haru_debug
             os: ubuntu-20.04
 
           - platform: android
             float-precision: single
             arch: x86_32
-            target-type: template_debug
+            target-type: haru_debug
             os: ubuntu-20.04
 
           - platform: ios
             float-precision: single
             arch: arm64
-            target-type: template_debug
+            target-type: haru_debug
             os: macos-latest
 
           - platform: web
             float-precision: single
             arch: wasm32
-            target-type: template_debug
+            target-type: haru_debug
             os: ubuntu-20.04
 
         # Release templates
           - platform: linux
             float-precision: single
             arch: x86_64
-            target-type: template_release
+            target-type: haru_release
             os: ubuntu-20.04
 
           # - platform: windows
           #   float-precision: single
           #   arch: x86_32
-          #   target-type: template_release
+          #   target-type: haru_release
           #   os: windows-latest
 
           # - platform: windows
           #   float-precision: single
           #   arch: x86_64
-          #   target-type: template_release
+          #   target-type: haru_release
           #   os: windows-latest
 
           # - platform: macos
           #   float-precision: single
           #   arch: universal
-          #   target-type: template_release
+          #   target-type: haru_release
           #   os: macos-latest
 
           # - platform: android
           #   float-precision: single
           #   arch: arm64
-          #   target-type: template_release
+          #   target-type: haru_release
           #   os: ubuntu-20.04
 
           # - platform: android
           #   float-precision: single
           #   arch: arm32
-          #   target-type: template_release
+          #   target-type: haru_release
           #   os: ubuntu-20.04
 
           # - platform: android
           #   float-precision: single
           #   arch: x86_64
-          #   target-type: template_release
+          #   target-type: haru_release
           #   os: ubuntu-20.04
 
           # - platform: android
           #   float-precision: single
           #   arch: x86_32
-          #   target-type: template_release
+          #   target-type: haru_release
           #   os: ubuntu-20.04
 
           # - platform: ios
           #   float-precision: single
           #   arch: arm64
-          #   target-type: template_release
+          #   target-type: haru_release
           #   os: macos-latest
 
           # - platform: web
           #   float-precision: single
           #   arch: wasm32
-          #   target-type: template_release
+          #   target-type: haru_release
           #   os: ubuntu-20.04
 
         # Double precision templates
@@ -141,122 +141,122 @@ jobs:
           - platform: linux
             float-precision: double
             arch: x86_64
-            target-type: template_debug
+            target-type: haru_debug
             os: ubuntu-20.04
 
           - platform: windows
             float-precision: double
             arch: x86_32
-            target-type: template_debug
+            target-type: haru_debug
             os: windows-latest
 
           - platform: windows
             float-precision: double
             arch: x86_64
-            target-type: template_debug
+            target-type: haru_debug
             os: windows-latest
 
           - platform: macos
             float-precision: double
             arch: universal
-            target-type: template_debug
+            target-type: haru_debug
             os: macos-latest
 
           - platform: android
             float-precision: double
             arch: arm64
-            target-type: template_debug
+            target-type: haru_debug
             os: ubuntu-20.04
 
           - platform: android
             float-precision: double
             arch: arm32
-            target-type: template_debug
+            target-type: haru_debug
             os: ubuntu-20.04
 
           - platform: android
             float-precision: double
             arch: x86_64
-            target-type: template_debug
+            target-type: haru_debug
             os: ubuntu-20.04
 
           - platform: android
             float-precision: double
             arch: x86_32
-            target-type: template_debug
+            target-type: haru_debug
             os: ubuntu-20.04
 
           - platform: ios
             float-precision: double
             arch: arm64
-            target-type: template_debug
+            target-type: haru_debug
             os: macos-latest
 
           - platform: web
             float-precision: double
             arch: wasm32
-            target-type: template_debug
+            target-type: haru_debug
             os: ubuntu-20.04
 
         # Double precision release templates
           - platform: linux
             float-precision: double
             arch: x86_64
-            target-type: template_release
+            target-type: haru_release
             os: ubuntu-20.04
 
           # - platform: windows
           #   float-precision: double
           #   arch: x86_32
-          #   target-type: template_release
+          #   target-type: haru_release
           #   os: windows-latest
 
           # - platform: windows
           #   float-precision: double
           #   arch: x86_64
-          #   target-type: template_release
+          #   target-type: haru_release
           #   os: windows-latest
 
           # - platform: macos
           #   float-precision: double
           #   arch: universal
-          #   target-type: template_release
+          #   target-type: haru_release
           #   os: macos-latest
 
           # - platform: android
           #   float-precision: double
           #   arch: arm64
-          #   target-type: template_release
+          #   target-type: haru_release
           #   os: ubuntu-20.04
 
           # - platform: android
           #   float-precision: double
           #   arch: arm32
-          #   target-type: template_release
+          #   target-type: haru_release
           #   os: ubuntu-20.04
 
           # - platform: android
           #   float-precision: double
           #   arch: x86_64
-          #   target-type: template_release
+          #   target-type: haru_release
           #   os: ubuntu-20.04
 
           # - platform: android
           #   float-precision: double
           #   arch: x86_32
-          #   target-type: template_release
+          #   target-type: haru_release
           #   os: ubuntu-20.04
 
           # - platform: ios
           #   float-precision: double
           #   arch: arm64
-          #   target-type: template_release
+          #   target-type: haru_release
           #   os: macos-latest
 
           # - platform: web
           #   float-precision: double
           #   arch: wasm32
-          #   target-type: template_release
+          #   target-type: haru_release
           #   os: ubuntu-20.04
     runs-on: ${{ matrix.os }}
     steps:
@@ -308,11 +308,11 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: godot-cpp-template-${{ matrix.platform }}-${{ matrix.arch }}-${{ matrix.float-precision }}-${{ matrix.target-type }}
+          name: haru-${{ matrix.platform }}-${{ matrix.arch }}-${{ matrix.float-precision }}-${{ matrix.target-type }}
           path: |
             ${{ github.workspace }}/bin/**
 
-  # Merges all the build artifacts together into a single godot-cpp-template artifact.
+  # Merges all the build artifacts together into a single haru artifact.
   # If you comment out this step, all the builds will be uploaded individually.
   merge:
     runs-on: ubuntu-20.04
@@ -321,6 +321,6 @@ jobs:
       - name: Merge Artifacts
         uses: actions/upload-artifact/merge@v4
         with:
-          name: godot-cpp-template
-          pattern: godot-cpp-template-*
+          name: haru
+          pattern: haru-*
           delete-merged: true

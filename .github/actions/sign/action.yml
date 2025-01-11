@@ -25,7 +25,7 @@ description: Sign Mac GDExtension
 
 inputs:
   FRAMEWORK_PATH:
-    description: The path of the artifact. Eg. bin/addons/my_addon/bin/libmy_addon.macos.template_release.universal.framework
+    description: The path of the artifact. Eg. bin/addons/haru/bin/libharu.macos.release.universal.framework
     required: true
   SIGN_FLAGS:
     description: The extra flags to use. Eg. --deep
